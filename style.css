@@ -1,0 +1,22 @@
+#zooname{
+    color:lightgreen;
+    font-family: khmer os;
+    font-size: 150%;
+    text-shadow: 6px 6px 9px black;
+}
+nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover{
+    color:lightgreen;
+    border-bottom-style:solid;
+    border-color:ivory;
+}
+nav.navbar ul.navbar-nav li.nav-item a.nav-link{
+    font-family: khmer os;
+    color: aliceblue;
+    text-shadow: 6px 6px 9px black;
+}
+nav.navbar img{
+    width:56px;
+    height:56px;
+}
+
+
