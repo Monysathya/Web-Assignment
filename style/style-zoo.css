@@ -28,8 +28,8 @@ nav.navbar img{
     height:100%;
 }
 .carousel-inner button{
-    border-radius: 20px;
-    width: 190px;
+    border-radius: 25px;
+    width: 200px;
     background-color:transparent;
     Color:white;
     border-color: white;
@@ -46,7 +46,7 @@ nav.navbar img{
     text-decoration: none;
     font-weight: bold;
     background-color: green;
-    border-radius: 20px;
+    border-radius: 25px;
     border-color: green;
 }
 .col-sm-12 a:hover{
