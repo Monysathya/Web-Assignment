@@ -1,0 +1,94 @@
+html body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5EBC7;
+}
+
+/* Navigation bar */
+nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+    color:white;
+    background-color: green;
+    border-radius: 20px;
+    border-color: green;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    font-family: Khmer OS;
+    color: aliceblue;
+    text-shadow: 6px 6px 9px black;
+}
+
+nav.navbar img {
+    width:56px;
+    height:56px;
+}
+
+/* #nav {
+    width: 100%;
+    height: 600px;
+    background: url(../img/Kofe2_SteveJones\ \(2\).jpg);
+    background-size: cover;
+}
+
+#nav_wrapper {
+    width: 100%;
+    height: 50px;
+    margin: auto auto;
+
+}
+#nav_wrapper ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+#nav_wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav_wrapper ul li:hover {
+    color:white;
+    background-color: green;
+    border-radius: 20px;
+    border-color: green;
+}
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+} */
+
+#zooname {
+    color:lightgreen;
+    font-family: khmer os;
+    font-size: 150%;
+    text-shadow: 6px 6px 9px black;
+} 
