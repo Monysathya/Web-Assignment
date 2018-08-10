@@ -24,6 +24,13 @@ nav.navbar img {
     height:56px;
 }
 
+#zooname {
+    color:lightgreen;
+    font-family: khmer os;
+    font-size: 150%;
+    text-shadow: 6px 6px 9px black;
+} 
+
 /* Ticket type */
 .grid-container {
     display: grid;
@@ -44,72 +51,51 @@ a {
     color: black;
 }
 
-/* #nav {
+/* Table */
+table {
+    border-collapse: collapse;
     width: 100%;
-    height: 600px;
-    background: url(../img/Kofe2_SteveJones\ \(2\).jpg);
-    background-size: cover;
-}
+} 
 
-#nav_wrapper {
-    width: 100%;
-    height: 50px;
-    margin: auto auto;
-
-}
-#nav_wrapper ul li {
-    list-style: none;
-    display: inline;
+th, td {
+    text-align: left;
     padding: 10px;
 }
 
-#nav_wrapper a {
-    color: white;
-    text-decoration: none;
+tr {
+    height: 60px;
 }
 
-#nav_wrapper ul li:hover {
-    color:white;
-    background-color: green;
-    border-radius: 20px;
-    border-color: green;
-}
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+th {
+    font-size: 22px;
+    background-color: #86BA24;
+    color: #f0ff00;
 }
 
-li {
-    float: left;
+td {
+    font-size: 18px;
+    color: #375F26;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+td.price-tag {
+    font: normal normal normal normal 26px / 20px "Myriad W01 SmBd";
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
-} */
+tr:nth-child(even) {
+    background-color: white;
+}
 
-#zooname {
-    color:lightgreen;
-    font-family: khmer os;
-    font-size: 150%;
-    text-shadow: 6px 6px 9px black;
-} 
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.align-right {
+    text-align: right; 
+}
+
+.span_1 {
+    font-size: 14px;
+    color: gray;
+}
+
+
