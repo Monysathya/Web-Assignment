@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
         <!-- <meta http-equiv="refresh" content="5"> -->
 
         <link rel="stylesheet" 
@@ -11,7 +12,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
           crossorigin="anonymous">
         <link rel="stylesheet" href="../style/style-ticket.css">
-        <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet' type='text/css'>
+        <!-- <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet' type='text/css'> -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -71,7 +72,7 @@
         <img src="../img/Kofe2_SteveJones.jpg" style="width: 100%; height: 500px;">
 
         <div class="container">
-            <div style="font-size: 40px; color: #375F26; font-family: Bayon; padding-top: 30px">
+            <div style="font-size: 40px; color: #375F26; font-family: Angkor; padding-top: 30px">
                 សំបុត្រ និង តំលៃ
             </div>
         </div><br>
@@ -84,19 +85,19 @@
             <div>
                 <p>
                     <img src="../img/fast-forward.png" width="25px" height="25px">
-                    <a href="#buynow" style="padding-left: 10px;">ទិញឥឡូវនេះ</a>        
+                    <a class="buy-ticket-link" href="#buynow">ទិញឥឡូវនេះ</a>        
                 </p>
             </div>
             <div>
                 <p>
                     <img src="../img/fast-forward.png" width="25px" height="25px">
-                    <a href="#annual_ticket" style="padding-left: 10px;">សំបុត្រប្រចាំឆ្នាំ</a>
+                    <a class="buy-ticket-link" href="#annual_ticket">សំបុត្រប្រចាំឆ្នាំ</a>
                 </p>
             </div>
             <div>
                 <p>
                     <img src="../img/fast-forward.png" width="25px" height="25px">
-                    <a href="#group_ticket" style="padding-left: 10px">សំបុត្រជាក្រុម</a>
+                    <a class="buy-ticket-link" href="#group_ticket">សំបុត្រជាក្រុម</a>
                 </p>
             </div>  
         </div><br><br>
@@ -104,7 +105,7 @@
         <!-- Table -->
         <div class="container">
             <!-- Buy now -->
-            <h2 id="buynow">សំបុត្រ</h2><br>
+            <h2 class="header-ticket" id="buynow">សំបុត្រ</h2><br>
 
             <table >
                 <tr>
@@ -150,7 +151,7 @@
             <p style="font-size: 13px">* ភ្ញៀវទេសចរដែលមានពិការភាពធ្ងន់ធ្ងរ (ប្រភេទខ) អាចត្រូវបានអមដោយអ្នកជិះកង់ដោយមិនគិតថ្លៃ។</p><br><br>
 
             <!-- Annual Ticket -->
-            <br><h2 id="annual_ticket">សំបុត្រប្រចាំឆ្នាំ</h2><br>
+            <br><h2 class="header-ticket" id="annual_ticket">សំបុត្រប្រចាំឆ្នាំ</h2><br>
 
             <table>
                 <tr>
@@ -195,8 +196,51 @@
 
             <p style="font-size: 13px">* ភ្ញៀវទេសចរដែលមានពិការភាពធ្ងន់ធ្ងរ (ប្រភេទខ) អាចត្រូវបានអមដោយអ្នកជិះកង់ដោយមិនគិតថ្លៃ។</p><br><br>
 
+            <!-- content starts here -->
+            <div class="container">
+    
+                <button class="accordion">តើខ្ញុំអាចទិញសំបុត្រប្រចាំឆ្នាំនៅកន្លែងណា?</button>
+                <div class="accordion-content">
+                    <p>
+                        សំបុត្រប្រចាំឆ្នាំសម្រាប់ សួនសត្វធម្មជាតិ អាចរកជាវបាននៅមជ្ឈមណ្ឌលសេវាកម្មនៅច្រកខាងកើតនៃសួនសត្វ។
+                    </p>
+                </div>
+    
+                <button class="accordion">តើខ្ញុំអាចទិញសំបុត្រប្រចាំឆ្នាំនៅពេលណា?</button>
+                <div class="accordion-content">
+                    <p>
+                        សំបុត្រប្រចាំឆ្នាំអាចត្រូវបានទិញក្នុងកំឡុងពេលបើកនៃមជ្ឈមណ្ឌលសេវាកម្ម:<br>
+                        ១ មករា - ២៧ កុម្ភៈ : ៩ ព្រឹក - ៤:៣០ រសៀល<br>
+                        ២៨ កុម្ភៈ - ២៦ មីនា : ៩ ព្រឹក - ៦ ល្ងាច<br>
+                        ២៧ មីនា - ២៤ កញ្ញា : ៩ ព្រឹក - ៦:៣០ ល្ងាច<br>
+                        ២៥ កញ្ញា - ២៩ តុលា: ៩ ព្រឹក - ៦ ល្ងាច<br>
+                        ៣ តុលា - ៣១ ធ្នូ : ៩ ព្រឹក - ៤:៣០ រសៀល<br>
+                    </p>
+                </div>
+    
+                <button class="accordion">ព័ត៌មានសំខាន់ទាក់ទងនឹងការទិញសំបុត្រប្រចាំឆ្នាំ</button>
+                <div class="accordion-content">
+                    <p>
+                        សមាជិកគ្រួសារទាំងអស់ត្រូវតែមានវត្តមាននៅពេលស្នើសុំទិញសំបុត្រគ្រួសារប្រចាំឆ្នាំ។<br>
+                        សូមចំណាំថាសំបុត្រប្រចាំឆ្នាំមិនអាចផ្ទេរបាន។
+                    </p>
+                </div>
+    
+                <button class="accordion">ទំនាក់ទំនង</button>
+                <div class="accordion-content">
+                    <p>
+                        តើអ្នកនៅតែមានសំណួរមែនទេ?<br>
+                        សូមធ្វើការទំនាក់ទំនងមកកាន់យើងខ្ញុំតាមរយះ<br><br>
+                        info@naturalzoocambodia.com.kh<br>
+                        ទូរស័ព្ទ ៖ (០១២) ៣៤៥ ៦៧៨
+                    </p>
+                </div>
+            </div>
+            <!-- contend ends here -->
+            <script src="../script/scripts-ticket.js"></script>
+
             <!-- Group Ticket -->
-            <br><h2 id="group_ticket">សំបុត្រជាក្រុម</h2><br>
+            <br><br><h2 class="header-ticket" id="group_ticket">សំបុត្រជាក្រុម</h2><br>
 
             <table>
                 <tr>

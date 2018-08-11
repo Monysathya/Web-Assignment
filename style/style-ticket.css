@@ -2,7 +2,7 @@ html body {
     width: 100%;
     height: 100%;
     background-color: #F5EBC7;
-    font-family: Bayon;
+    font-family: Chenla;
 }
 
 /* Navigation bar */
@@ -40,7 +40,7 @@ nav.navbar img {
     padding: 10px;
 }
 
-  .grid-container > div {
+.grid-container > div {
     /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: center;
     padding: 10px 0;
@@ -49,6 +49,11 @@ nav.navbar img {
 
 a {
     color: black;
+}
+
+.buy-ticket-link {
+    padding-left: 10px;
+    font-family: Dangrek;
 }
 
 /* Table */
@@ -98,4 +103,46 @@ tr:nth-child(odd) {
     color: gray;
 }
 
+h2.header-ticket {
+    font-family: Koh Santepheap;
+}
 
+/* Content */
+button.accordion {
+    width: 100%;
+    background-color: #F5EBC7;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+  
+button.accordion:after {
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 13px;
+    float: right;
+}
+  
+button.accordion.is-open:after {
+    content: '\f056';
+}
+  
+button.accordion:hover, button.accordion.is-open {
+    background-color: #86BA24;
+}
+  
+.accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+  
