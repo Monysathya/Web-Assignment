@@ -31,6 +31,16 @@ nav.navbar img {
     text-shadow: 6px 6px 9px black;
 } 
 
+/* Image slider */
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
 /* Ticket type */
 .grid-container {
     display: grid;
@@ -53,7 +63,7 @@ a {
 
 .buy-ticket-link {
     padding-left: 10px;
-    font-family: Dangrek;
+    font-family: Dangrek;   
 }
 
 /* Table */
@@ -110,12 +120,12 @@ h2.header-ticket {
 /* Content */
 button.accordion {
     width: 100%;
-    background-color: #F5EBC7;
+    background-color: #E2C7FF;
     border: none;
     outline: none;
     text-align: left;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     cursor: pointer;
     transition: background-color 0.2s linear;
@@ -140,8 +150,8 @@ button.accordion:hover, button.accordion.is-open {
     background-color: white;
     border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke;
-    padding: 0 20px;
-    max-height: 0;
+    padding: 0px 20px;
+    max-height: 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
 }

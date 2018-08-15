@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-        <!-- <meta http-equiv="refresh" content="5"> -->
 
         <link rel="stylesheet" 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"      
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
           crossorigin="anonymous">
         <link rel="stylesheet" href="../style/style-ticket.css">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet' type='text/css'> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -68,8 +68,39 @@
         </nav>
         <!-- End of Navigation bar -->
 
+        <!-- Image slider -->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>          
+            </ul>
+    
+            <div class="carousel-inner">
+            
+                <div class="carousel-item active">
+                    <img src="../img/lion.jpg" width="100%" height="500px">
+                
+                    <div class="content">
+                        <h1>សូមស្វាគមន៍</h1>
+                        <p>សួនសត្វដែលស្រស់ស្អាតជាងគេក្នុងប្រទេសកម្ពុជា</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="../img/aquarium.jpg" width="100%" height="500px">
+
+                    <div class="content">
+                        <h1>ការផ្សព្វផ្សាយ</h1>
+                        <p>បញ្ចុះតំលៃ ៣០%</p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+
+
         <!-- Image on top -->
-        <img src="../img/Kofe2_SteveJones.jpg" style="width: 100%; height: 500px;">
+        <!-- <img src="../img/lion.jpg" style="width: 100%; height: 500px;"> -->
 
         <div class="container">
             <div style="font-size: 40px; color: #375F26; font-family: Angkor; padding-top: 30px">
@@ -84,19 +115,20 @@
             <div><img src="../img/group-ticket.png" alt="Group Ticket" width="150px" height="150px"></div>  
             <div>
                 <p>
-                    <img src="../img/fast-forward.png" width="25px" height="25px">
+                    <!-- <img src="../img/fast-forward.png" width="25px" height="25px"> -->
+                    <i class="fas fa-arrow-circle-right" style="color: green"></i>
                     <a class="buy-ticket-link" href="#buynow">ទិញឥឡូវនេះ</a>        
                 </p>
             </div>
             <div>
                 <p>
-                    <img src="../img/fast-forward.png" width="25px" height="25px">
+                    <i class="fas fa-arrow-circle-right" style="color: green"></i>
                     <a class="buy-ticket-link" href="#annual_ticket">សំបុត្រប្រចាំឆ្នាំ</a>
                 </p>
             </div>
             <div>
                 <p>
-                    <img src="../img/fast-forward.png" width="25px" height="25px">
+                    <i class="fas fa-arrow-circle-right" style="color: green"></i>
                     <a class="buy-ticket-link" href="#group_ticket">សំបុត្រជាក្រុម</a>
                 </p>
             </div>  
@@ -200,16 +232,17 @@
             <div class="container">
     
                 <button class="accordion">តើខ្ញុំអាចទិញសំបុត្រប្រចាំឆ្នាំនៅកន្លែងណា?</button>
+                
                 <div class="accordion-content">
                     <p>
-                        សំបុត្រប្រចាំឆ្នាំសម្រាប់ សួនសត្វធម្មជាតិ អាចរកជាវបាននៅមជ្ឈមណ្ឌលសេវាកម្មនៅច្រកខាងកើតនៃសួនសត្វ។
+                        <br>សំបុត្រប្រចាំឆ្នាំសម្រាប់ សួនសត្វធម្មជាតិ អាចរកជាវបាននៅមជ្ឈមណ្ឌលសេវាកម្មនៅច្រកខាងកើតនៃសួនសត្វ។
                     </p>
                 </div>
     
                 <button class="accordion">តើខ្ញុំអាចទិញសំបុត្រប្រចាំឆ្នាំនៅពេលណា?</button>
                 <div class="accordion-content">
                     <p>
-                        សំបុត្រប្រចាំឆ្នាំអាចត្រូវបានទិញក្នុងកំឡុងពេលបើកនៃមជ្ឈមណ្ឌលសេវាកម្ម:<br>
+                        <br>សំបុត្រប្រចាំឆ្នាំអាចត្រូវបានទិញក្នុងកំឡុងពេលបើកនៃមជ្ឈមណ្ឌលសេវាកម្ម:<br>
                         ១ មករា - ២៧ កុម្ភៈ : ៩ ព្រឹក - ៤:៣០ រសៀល<br>
                         ២៨ កុម្ភៈ - ២៦ មីនា : ៩ ព្រឹក - ៦ ល្ងាច<br>
                         ២៧ មីនា - ២៤ កញ្ញា : ៩ ព្រឹក - ៦:៣០ ល្ងាច<br>
@@ -221,7 +254,7 @@
                 <button class="accordion">ព័ត៌មានសំខាន់ទាក់ទងនឹងការទិញសំបុត្រប្រចាំឆ្នាំ</button>
                 <div class="accordion-content">
                     <p>
-                        សមាជិកគ្រួសារទាំងអស់ត្រូវតែមានវត្តមាននៅពេលស្នើសុំទិញសំបុត្រគ្រួសារប្រចាំឆ្នាំ។<br>
+                        <br>សមាជិកគ្រួសារទាំងអស់ត្រូវតែមានវត្តមាននៅពេលស្នើសុំទិញសំបុត្រគ្រួសារប្រចាំឆ្នាំ។<br>
                         សូមចំណាំថាសំបុត្រប្រចាំឆ្នាំមិនអាចផ្ទេរបាន។
                     </p>
                 </div>
@@ -229,7 +262,7 @@
                 <button class="accordion">ទំនាក់ទំនង</button>
                 <div class="accordion-content">
                     <p>
-                        តើអ្នកនៅតែមានសំណួរមែនទេ?<br>
+                        <br>តើអ្នកនៅតែមានសំណួរមែនទេ?<br>
                         សូមធ្វើការទំនាក់ទំនងមកកាន់យើងខ្ញុំតាមរយះ<br><br>
                         info@naturalzoocambodia.com.kh<br>
                         ទូរស័ព្ទ ៖ (០១២) ៣៤៥ ៦៧៨
@@ -270,5 +303,47 @@
 
             <p style="font-size: 13px">* មានសុពលភាពនៅថ្ងៃធ្វើការចាប់ពីម៉ោង ៩ ព្រឹកដល់ ២ រសៀល, ថ្ងៃអាទិត្យ និង ថ្ងៃបុណ្យមិនរាប់បញ្ចូល។</p><br><br>
         </div>
+
+        <!--Information-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="text-align: center; background-color: lightgray"><br/>
+                    <p style="font-weight: bold;">ត្រូវការ​ជំនួយ ?</p>
+                    <hr style="background-color: black">
+                    <a href="#" style="font-size: 18px">ទាក់ទង​មក​ពួក​យើង</a><br/>
+                    <a href="#" style="font-size: 18px">FAQ</a>
+                </div>
+
+                <div class="col-sm-4" style="text-align: center; background-color: green"><br/>
+                    <p style="font-size: 20px; font-weight: bold; color:white">បើកដំនើរការម៉ោង</p>
+                    <hr style="background-color: aliceblue">
+                    <p style="font-size: 18px;color:white">បើកដំនើរការរៀងរាល់ថ្ងៃ</p>
+                    <p style="font-size: 18px;color:white">៩:០០ ព្រឹក - ៥:០០ ល្ងាច</p>
+                </div>
+            
+                <div class="col-sm-4" style="text-align: center;background-color: lightgray"><br/>
+                    <p style="font-size: 20px; font-weight: bold">អាសយដ្ឋាន</p>
+                    <hr style="background-color: black">
+                    <p style="font-size: 15px">បើកដំនើរការរៀងរាល់ថ្ងៃ</p>
+                    <p style="font-size: 15px">៩:០០ ព្រឹក - ៥:០០ ល្ងាច</p>
+                </div>
+            </div>
+        </div>
+
+        <!--End information-->
+        <!--Follow-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12" style="background-color: black; color:white; font-weight: bold; text-align: center">
+                    follow Us On :<br>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook.png" width="30" height="30"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube.png" width="30" height="30"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter.png" width="30" height="30"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/instagram.png" width="30" height="30"></a>
+                </div>
+            </div>
+        </div>
+        <!--End follow-->
+        
     </body>
 </html>
